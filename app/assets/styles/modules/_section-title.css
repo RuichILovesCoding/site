@@ -21,6 +21,12 @@
       margin-left: 0;
       display: inline-block;
       margin-bottom: 0rem;
+      position: relative;
+      top: 8px;
     }
+  }
+
+  &--blue {
+    color: $mainBlue;
   }
 }

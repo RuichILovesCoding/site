@@ -31,10 +31,51 @@
     }
   }
 
+  @mixin atLarge {
+    &__large-4 {
+      float: left;
+      width: 33.33%;
+    }
+    &__large-8 {
+      float: left;
+      width: 66.66%;
+    }
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+
   &__b-margin-until-medium {
     margin-bottom: 1rem;
     @mixin atMedium {
       margin-bottom: 0;
+    }
+  }
+
+  &--t-padding {
+    padding-top: 80px;
+  }
+  /*begin equal height rules*/
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }
