@@ -1,5 +1,6 @@
 import "../styles/styles.css";
 import MobileMenu from "../scripts/modules/MobileMenu";
+import StickyHeader from "../scripts/modules/StickyHeader";
 import RevealOnScroll from "../scripts/modules/RevealOnScroll";
 // accept the hot module updates
 if (module.hot) {
@@ -7,6 +8,7 @@ if (module.hot) {
 }
 
 let mobileMenu = new MobileMenu();
+let stickyHeader = new StickyHeader();
 
 // create a reusable class
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);

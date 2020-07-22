@@ -1,4 +1,8 @@
 /*global css rules*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   color: #333;
